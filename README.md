@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/piyush-bhatt/vscode-base16-terminal/main/media/icon/icon.png" alt="Base16 Terminal Logo" /></a>
+  <img src="https://raw.githubusercontent.com/piyush-bhatt/vscode-base16-terminal/main/media/icon/icon.png" style="height:64px; width:64px" alt="Base16 Terminal Logo" /></a>
 </p>
 
 > [Base16 Terminal](https://marketplace.visualstudio.com/items?itemName=piyush-bhatt.base16-terminal) provides Base16 themes to select from and apply to your VSCode terminal.
