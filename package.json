@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/piyush-bhatt/vscode-base16-term"
+    "url": "https://github.com/piyush-bhatt/vscode-base16-terminal"
   },
   "bugs": {
-    "url": "https://github.com/piyush-bhatt/vscode-base16-term/issues"
+    "url": "https://github.com/piyush-bhatt/vscode-base16-terminal/issues"
   },
-  "homepage": "https://github.com/piyush-bhatt/vscode-base16-term#readme",
+  "homepage": "https://github.com/piyush-bhatt/vscode-base16-terminal#readme",
   "license": "SEE LICENSE IN LICENSE",
   "keywords": [
     "base16",
@@ -33,6 +33,7 @@
     "onCommand:base16-term.setTerminalTheme"
   ],
   "main": "./out/extension.js",
+  "icon": "media/icon/icon.png",
   "contributes": {
     "commands": [
       {
