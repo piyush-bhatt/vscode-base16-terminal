@@ -6,7 +6,7 @@
 
 # Usage
 
-`Note: A folder or workspace should be open to chage Terminal theme`
+`Note: A folder or workspace should be open to change Terminal theme`
 
 1. Open `Command Palette`.
 2. Type or Select `Set Terminal Theme` command.
