@@ -2,7 +2,7 @@
   "name": "base16-terminal",
   "displayName": "Base16 Terminal",
   "description": "Base16 colour themes for VSCode terminal",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "publisher": "piyush-bhatt",
   "author": {
     "name": "Piyush Bhatt"
