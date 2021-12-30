@@ -17,6 +17,10 @@
   <img src="https://raw.githubusercontent.com/piyush-bhatt/vscode-base16-terminal/main/media/readme/Set_Terminal_Theme.gif" alt="Set Terminal Theme" />
 </p>
 
+<br />
+
+> Command `Set Terminal Theme` is also available to remove any color customizations to the terminal and revert to the default, however, it's unable to determine whether the customizations have been touched manually or by some other extension as well, so it should be executed at the risk of losing any such changes.
+
 # Acknowledgement
 
 Base16 Terminal themes were created using [vscode-base16-term](https://github.com/Glitchbone/vscode-base16-term) and [base16-shell](https://github.com/chriskempson/base16-shell).

@@ -2,7 +2,7 @@
   "name": "base16-terminal",
   "displayName": "Base16 Terminal",
   "description": "Base16 colour themes for VSCode terminal",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "piyush-bhatt",
   "author": {
     "name": "Piyush Bhatt"
@@ -30,7 +30,8 @@
     "Themes"
   ],
   "activationEvents": [
-    "onCommand:base16-term.setTerminalTheme"
+    "onCommand:base16-term.setTerminalTheme",
+    "onCommand:base16-term.removeTerminalTheme"
   ],
   "main": "./dist/extension.js",
   "icon": "media/icon/icon.png",
@@ -39,6 +40,10 @@
       {
         "command": "base16-term.setTerminalTheme",
         "title": "Set Terminal Theme"
+      },
+      {
+        "command": "base16-term.removeTerminalTheme",
+        "title": "Remove Terminal Theme"
       }
     ]
   },

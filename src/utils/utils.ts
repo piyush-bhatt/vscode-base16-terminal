@@ -45,6 +45,18 @@ export const setTerminalThemePreview = async (theme: string) => {
   await setColorCustomizations(colorCustomizations);
 };
 
+export const removeTerminalTheme = async () => {
+  const currentColorCustomization = await getColorCustomizations();
+  const terminalThemeKeys = Object.keys(Object.values(getThemesFromContext())[0]);
+  const colorCustomizationsWithoutTerminalTheme = Object.keys(currentColorCustomization)
+    .filter((key) => !terminalThemeKeys.includes(key))
+    .reduce((obj: Record<string, string>, key) => {
+      obj[key] = currentColorCustomization[key];
+      return obj;
+    }, {});
+  await setColorCustomizations(colorCustomizationsWithoutTerminalTheme);
+};
+
 export const getAvailableThemeNames = (): IThemeItem[] | void[] => {
   const themes = getThemesFromContext();
   return Object.keys(themes).map((key: string) => {
