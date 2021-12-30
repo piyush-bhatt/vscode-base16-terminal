@@ -5,4 +5,5 @@ export {
   setColorCustomizations,
   setTerminalThemePreview,
   isWSOpen,
+  removeTerminalTheme,
 } from './utils';

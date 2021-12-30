@@ -8,12 +8,14 @@ import {
   setColorCustomizations,
   setTerminalThemePreview,
   setThemesToContext,
+  removeTerminalTheme,
 } from './utils';
 
 export function activate(context: vscode.ExtensionContext) {
   setContext(context);
   setThemesToContext();
-  let disposable = vscode.commands.registerCommand('base16-term.setTerminalTheme', async () => {
+
+  const setThemeCmd = vscode.commands.registerCommand('base16-term.setTerminalTheme', async () => {
     if (isWSOpen()) {
       let currentColorCustomizations = await getColorCustomizations();
       const themeNames = getAvailableThemeNames();
@@ -32,7 +34,15 @@ export function activate(context: vscode.ExtensionContext) {
       vscode.window.showInformationMessage('Open a folder or workspace to change Terminal theme');
     }
   });
-  getContext().subscriptions.push(disposable);
+
+  const removeThemeCmd = vscode.commands.registerCommand('base16-term.removeTerminalTheme', async () => {
+    if (isWSOpen()) {
+      await removeTerminalTheme();
+    } else {
+      vscode.window.showInformationMessage('Open a folder or workspace to edit Terminal theme');
+    }
+  });
+  getContext().subscriptions.push(setThemeCmd, removeThemeCmd);
 }
 
 export function deactivate() {}
