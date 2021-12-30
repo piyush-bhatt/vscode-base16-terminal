@@ -19,7 +19,7 @@
 
 <br />
 
-> Command `Set Terminal Theme` is also available to remove any color customizations to the terminal and revert to the default, however, it's unable to determine whether the customizations have been touched manually or by some other extension as well, so it should be executed at the risk of losing any such changes.
+> Command `Remove Terminal Theme` is also available to remove any color customizations to the terminal and revert to the default, however, it's unable to determine whether the customizations have been touched manually or by some other extension as well, so it should be executed at the risk of losing any such changes.
 
 # Acknowledgement
 
